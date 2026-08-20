@@ -15,6 +15,8 @@ async function getProducts(){
     //----- currentPage -----
 
     let currentPage= window.location.pathname.split('/').pop()
+    console.log("Current Page:", currentPage);
+    console.log("API Data:", data);
 
     let products=[]
 

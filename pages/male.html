@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Awesome 6 (free) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/male-female-all.css" />
+  </head>
+  <body>
+    <!-- ====== NAVBAR ====== -->
+    <section class="navabr-section">
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <!-- Logo -->
+        <div class="brand">
+          <i class="fa-solid fa-o"></i>
+          Dine Market
+        </div>
+
+        <!-- Nav Links -->
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/pages/male.html">Male </a></li>
+          <li><a href="/pages/female.html">Female </a></li>
+          <li><a href="/pages/all_product.html">All Products </a></li>
+          <!-- Login / Register -->
+          <div class="auth auth-menu" style="margin-top: 30px">
+            <span
+              ><a
+                href="/pages/login.html"
+                style="text-decoration: none; color: black"
+                >Login</a
+              ></span
+            >
+            <span class="divider">/</span>
+            <span>Register</span>
+          </div>
+        </ul>
+
+        <div style="display: flex; gap: 30px">
+          <!-- cart icon -->
+          <div class="nav-cart" id="cart-button">
+            <i class="fa-solid fa-cart-plus"></i>
+            <span>0</span>
+          </div>
+
+          <!-- Login / Register -->
+          <div class="auth">
+            <span
+              ><a
+                href="/pages/login.html"
+                style="text-decoration: none; color: black"
+                >Login</a
+              ></span
+            >
+            <span class="divider">/</span>
+            <span><a href="/pages/SignUp.html">Register</a></span>
+          </div>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+      <div class="cart-details" id="cart-details">
+        <div class="top-cart-details">
+          <h1>Your Cart</h1>
+          <i class="fa-solid fa-x" id="cart-close"></i>
+        </div>
+        <div class="carts-product">
+          <p>Your cart is empty</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------- we declare empty div the data come from javascript -------- -->
+    <div id="main-container"></div>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer" style="margin-top: 200px">
+      <div class="footer-container">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <h2 class="brand-name brand">
+            <i class="fa-solid fa-o"></i> Dine Market
+          </h2>
+          <p class="brand-desc">
+            Small, artisan label that offers a thoughtfully curated collection
+            of high quality everyday essentials made.
+          </p>
+          <div class="brand-icons">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Company -->
+        <div class="footer-col">
+          <h3 class="col-title">Company</h3>
+          <ul class="col-links">
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">How it works</a></li>
+            <li><a href="/pages/contact.html">Contact us</a></li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div class="footer-col">
+          <h3 class="col-title">Support</h3>
+          <ul class="col-links">
+            <li><a href="#">Support Center</a></li>
+            <li><a href="#">24h Services</a></li>
+            <li><a href="#">Quick Chat</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <h3 class="col-title">Contact</h3>
+          <ul class="col-links">
+            <li><a href="#">Whatsapp</a></li>
+            <li><a href="#">Support 24h</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <hr />
+
+    <!-- copyright -->
+    <div class="copyright">
+      <p>Copyright © 2026 Dine Market</p>
+      <p>Design by: <b>Ishaq Ahmad</b></p>
+      <p>Code by: <b>Ishaq Ahmad</b></p>
+    </div>
+
+    <script src="/js/male-female-all.js"></script>
+  </body>
+</html>
